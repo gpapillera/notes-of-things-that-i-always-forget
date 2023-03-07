@@ -4,9 +4,6 @@ This is a breif and concise procedure on creating a application with React libra
 
 ## Prerequisites
 1. Make sure [Node and npm](https://nodejs.org/en/download/) are installed. Visit the link provided for the latest version.
-2. [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) is installed.
-3. A [GitHub](https://github.com/) account. 😎
-
 
 ## 📝 Tutorial 
 1. Create a React App named `my-app`.
