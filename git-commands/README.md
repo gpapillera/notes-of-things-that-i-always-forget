@@ -3,7 +3,8 @@
 
 ## ⚙ Prerequisites
 
-📌Go to this site 🌐[git](https://www.git-scm.com/). Then download and install `git` to your PC.
+📌Go to this site 🌐[git](https://www.git-scm.com/). Then download and install `git` to your PC.\
+📌A [GitHub](https://github.com/signup) account. 😎
 
 <br>
 
@@ -70,7 +71,7 @@ To see different ways on **ignoring a file** go with [gitignore](https://github.
 
 <br>
 
-## 💻 Upload Code to GitHub
+## 💻 Work with Git
 
 1. Change directory to working folder
    ```Git
@@ -165,9 +166,108 @@ To see different ways on **ignoring a file** go with [gitignore](https://github.
     ```Git
     git rebase -i --root
     ```
-    
+    - Go back to **default view**, press colon key and x `:x`.
 
 <br>
+
+## 💻 New Branch
+
+1. **Create** a **new branch**.
+   ```Git
+    git branch newBranchName
+   ```
+   > `newBranchName` - set your own branch name.
+   - **Switch branch**.
+     ```Git
+     git switch branchName
+     ```
+   - **Merge branch** with comment.
+     ```Git
+     git merge -m "yourComment" branchName
+     ``` 
+   > You can merge branches without comment by `git merge branchName`
+   - **Delete branch**.
+     ```Git
+     git branch -d branchName
+     ```
+2. **Switch** and *at the same time* **create new branch**.
+   ```Git
+    git switch -c newBranchName
+   ```
+<br>
+
+## 💻 Push Local Repository to Github
+
+1. First you need to have [GitHub](https://github.com/signup) account.
+2. Create **new repository** with GitHub.
+   
+   ![New Repo](new-repo.png)
+
+    > Give new repository a name then click `Create repository`.
+
+3. Newly created repository on Github looks like this:
+
+![git remote](git-remote.png)
+
+4. **Add remote link** to a local repository. Copy `git remote` command then go back to your **terminal**, then paste.
+   > In my case my **git remote command** looks like this:
+   ```Git
+    git remote add origin https://github.com/gpapillera/sample-repo.git
+   ```
+   > You have yours.
+
+5. **Set** the **target branch**.
+   ```Git
+    git branch -M main
+   ```
+
+6. **Push all repository** to the cloud.
+   ```Git
+    git push -u origin main
+   ```
+   - **Push all branches**.
+     ```Git
+      git push --all
+     ```
+<br>
+
+## 💻 Pull Github Repository (cloud) to Local Workspace
+
+1. **1st option** on pulling GitHub Repository.
+   - **Fetch** repository
+      ```
+       git fetch
+      ```
+      > GitHub repository will be fetch then place to your local computer.
+   - **Merge** GitHub repo to local repo.
+      ```Git
+       git merge
+      ```
+      > GitHub repo will be merge (over write) to local repo.
+2. **2nd option** on pulling GitHub Repository.
+    ```Git
+     git pull
+    ```
+    > This `git pull` command will directly `fetch` and `merge` GitHub repo to local repo.
+
+<br>
+
+## 💻 Deleting Branches
+
+1. **Delete all branches except master/main**. (Local repo)
+   ```Git
+    git branch | grep -v "master/main" | xargs git branch -D
+   ```
+    OR
+   ```Git
+    git branch | grep -v " master$" | xargs git branch -D
+   ```
+
+2. **Delete branch remotely**.
+   ```Git
+    git branch -r --merged master/main | ack -v master/main | sed -e 's/\// :/' | xargs -n2 git push
+   ```
+   > choose between `master` or `main`.
 
 ### 🔗 Reference Links
 
