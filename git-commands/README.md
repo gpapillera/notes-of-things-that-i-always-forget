@@ -1,5 +1,6 @@
-# 👨🏼‍💻 Git Commands 
+# 👨🏼‍💻 Git Commands
 
+Here are some of the most useful git commands that you'll need to know when working with Git.
 
 ## ⚙ Prerequisites
 
@@ -269,6 +270,6 @@ To see different ways on **ignoring a file** go with [gitignore](https://github.
    ```
    > choose between `master` or `main`.
 
-### 🔗 Reference Links
+## 🔗 Reference Links
 
 [![FreeCodeCamp](https://img.shields.io/youtube/channel/subscribers/UCfJT_eYDTmDE-ovKaxVE1ig?label=%20Kevin%20Stratvert&logo=YouTube&style=social)](https://youtu.be/tRZGeaHPoaw) 

@@ -1,5 +1,6 @@
 # Markdown Cheat Sheet 📝
-A collection of the most useful and popular syntax for producing articles in Markdown.
+
+This collection of Markdown syntax provides the most useful and helpful options for producing articles in Markdown.
 
 ## 📌 Create Headers 
 
@@ -328,6 +329,6 @@ You can also use words, to fit your writing style more closely[^note].
 
 ---
 
-### 🔗 Reference Links
+## 🔗 Reference Links
 
 [![FreeCodeCamp](https://img.shields.io/website?label=FreeCodeCamp&logo=FreeCodeCamp&style=for-the-badge&url=https%3A%2F%2Fwww.freecodecamp.org%2Fnews%2Fmarkdown-cheatsheet%2F)](https://www.freecodecamp.org/news/markdown-cheatsheet/) [![Github Docs](https://img.shields.io/website?label=Github%20Docs&logo=Github&logoColor=c9d1d9&style=for-the-badge&url=https%3A%2F%2Fdocs.github.com%2Fen%2Fget-started%2Fwriting-on-github%2Fgetting-started-with-writing-and-formatting-on-github%2Fbasic-writing-and-formatting-syntax)](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
