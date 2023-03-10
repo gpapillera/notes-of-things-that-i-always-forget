@@ -49,7 +49,7 @@ To have a fresh look of the terminal
 
 <br>
 
-## 💻 Ignore a File/Folder/Entensions
+## 💻 Ignore a File/Folder/Extensions
 
 1. Open **file explorer**/**Folder** 📁 where your project is.
 2. Create a text document - `*.txt` file. Just open **Notepad**. 📄
@@ -60,7 +60,7 @@ To have a fresh look of the terminal
    i.e.
    # ignore ALL .txt files
    ```
-6. Lastly type a command to ingnore file/folder/extension
+6. Lastly type a command to ignore file/folder/extension
    ```git
    i.e.
    # ignore ALL .txt files
@@ -126,7 +126,7 @@ To see different ways on **ignoring a file** go with [gitignore](https://github.
    ```git
    git rm "fileName.extension"
    ```
-   > Easyway: Just delete the file in the folder.
+   > Easy way: Just delete the file in the folder.
    - **Restore** a deleted file.
    ```git
    git restore "fileName.extension"
