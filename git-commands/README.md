@@ -11,17 +11,17 @@
 ## 💻 Starting with Git
 
 1. 1st specify the **name**.
-   ```Git
+   ```git
    git config --global user.name "Gln Papillers"
    ```
    >Hit ENTER.↩
 2. Specify your **email address**.
-    ```Git
-    git config --global user.email "glnppllr@tiktokerist.com"
-    ```
+   ```git
+   git config --global user.email "glnppllr@tiktokerist.com"
+   ```
 3. Set a **default *branch name***.
-   ```Git
-    git config --global init.default branch main 
+   ```git
+   git config --global init.default branch main 
    ```
    > `main` is the set default **branch name** for your git.
 
@@ -30,21 +30,21 @@
 ## 💻 Configure Git
 
 1. **Help information** about `git config`. 
-    ```Git
-    git config -h
-    ```
+   ```git
+   git config -h
+   ```
 2. Detailed **Help information** about `git config`. 
-    ```Git
-    git help config
-    ```
+   ```git
+   git help config
+   ```
 
 <br>
 
 ## 💻 Clear the Terminal
 To have a fresh look of the terminal   
-```Git
-clear
-```
+   ```git
+   clear
+   ```
 
 <br>
 
@@ -55,12 +55,12 @@ clear
 3. Rename the  `*.txt` file to `.gitignore`, hit **Yes**.
 4. Open `.gitignore` with text editor, **Notepad**.
 5. To **Add comment**, type `#` hit space then type the message.
-   ```Git
+   ```git
    i.e.
    # ignore ALL .txt files
    ```
 6. Lastly type a command to ingnore file/folder/extension
-   ```Git
+   ```git
    i.e.
    # ignore ALL .txt files
    *.txt 
@@ -74,22 +74,22 @@ To see different ways on **ignoring a file** go with [gitignore](https://github.
 ## 💻 Work with Git
 
 1. Change directory to working folder
-   ```Git
-    cd c:/users/glenp/desktop/FolderName
+   ```git
+   cd c:/users/glenp/desktop/FolderName
    ```
 
 2. **Initialize git** repository
-   ```Git
-    git init
+   ```git
+   git init
    ```
    - Get repo **status**
-     ```
+     ```git
      git status
      ```
 
 3. **Stage** or **track** a file.
-   ```Git
-    git add index.html
+   ```git
+   git add index.html
    ```
    > `index.html` - file name and extension.
    - Command options to **track ALL files**, just *choose one*.
@@ -99,100 +99,100 @@ To see different ways on **ignoring a file** go with [gitignore](https://github.
      git add .
      ```
     - **Unstage** or **untrack** a file.
-        ```Git
-        git rm --cached fileName.extension   
-        ```
-        OR remove file from staging, when not ready to commit
-        ```Git
-        git restore --staged fileName.extension   
-        ```
+      ```git
+      git rm --cached fileName.extension   
+      ```
+      OR remove file from staging, when not ready to commit
+      ```git
+      git restore --staged fileName.extension   
+      ```
 
 4. **Commit Repository**.
-    ```Git
-    git commit -m "My 1st Commit"  
-    ```
-    - To see what's been **modified**.
-    ```Git
-    git diff 
-    ```
+   ```git
+   git commit -m "My 1st Commit"  
+   ```
+   - To see what's been **modified**.
+   ```git
+   git diff 
+   ```
 
 5. **Bypass/skip over** staging 
-   ```Git
-    git commit -a -m "My Comment"
+   ```git
+   git commit -a -m "My Comment"
    ```
 
 6. **Delete** a file.
-   ```Git
-    git rm "fileName.extension"
+   ```git
+   git rm "fileName.extension"
    ```
    > Easyway: Just delete the file in the folder.
    - **Restore** a deleted file.
-    ```Git
-    git restore "fileName.extension"
-    ```
+   ```git
+   git restore "fileName.extension"
+   ```
 
 7. **Rename** a file.
-   ```Git
-    git mv "oldFileName.extnsn" "newFileName.extnsn"
+   ```git
+   git mv "oldFileName.extnsn" "newFileName.extnsn"
    ```
 
 8. **Review** the commit you made.
-   ```Git
-    git log
+   ```git
+   git log
    ```
    - Review commit in **one line**.
-    ```Git
-    git log --oneline
-    ```
+   ```git
+   git log --oneline
+   ```
 9. **Amend change** with your latest commit.
-    ```Git
-    git commit -m "Your Comment" --amend
-    ```
+   ```git
+   git commit -m "Your Comment" --amend
+   ```
 > To go back with your previous command, press `Arrow Up` ⬆
 
-10. See **actual change** in every different commits/ **dig deep and specific**.
-    ```Git
-    git log -p
-    ```
-    - Exit view from `git log p` **press `q`**.
+   10. See **actual change** in every different commits/ **dig deep and specific**.
+   ```git
+   git log -p
+   ```
+   - Exit view from `git log p` **press `q`**.
 
 11. **Jump back** with the **previous commit**.
-    ```Git
-    git reset C193894
-    ```
-    > `C193894` - this is a commit address through accessing `git log`.
+   ```git
+   git reset C193894
+   ```
+   > `C193894` - this is a commit address through accessing `git log`.
 
 12. **Modify log history** of commits/the order in which all commits appear.
-    ```Git
-    git rebase -i --root
-    ```
-    - Go back to **default view**, press colon key and x `:x`.
+   ```git
+   git rebase -i --root
+   ```
+   - Go back to **default view**, press colon key and x `:x`.
 
 <br>
 
 ## 💻 New Branch
 
 1. **Create** a **new branch**.
-   ```Git
-    git branch newBranchName
+   ```git
+   git branch newBranchName
    ```
    > `newBranchName` - set your own branch name.
    - **Switch branch**.
-     ```Git
+     ```git
      git switch branchName
      ```
    - **Merge branch** with comment.
-     ```Git
+     ```git
      git merge -m "yourComment" branchName
      ``` 
    > You can merge branches without comment by `git merge branchName`
    - **Delete branch**.
-     ```Git
+     ```git
      git branch -d branchName
      ```
 2. **Switch** and *at the same time* **create new branch**.
-   ```Git
-    git switch -c newBranchName
+   ```git
+   git switch -c newBranchName
    ```
 <br>
 
@@ -203,7 +203,7 @@ To see different ways on **ignoring a file** go with [gitignore](https://github.
    
    ![New Repo](new-repo.png)
 
-    > Give new repository a name then click `Create repository`.
+   > Give new repository a name then click `Create repository`.
 
 3. Newly created repository on Github looks like this:
 
@@ -211,23 +211,23 @@ To see different ways on **ignoring a file** go with [gitignore](https://github.
 
 4. **Add remote link** to a local repository. Copy `git remote` command then go back to your **terminal**, then paste.
    > In my case my **git remote command** looks like this:
-   ```Git
-    git remote add origin https://github.com/gpapillera/sample-repo.git
+   ```git
+   git remote add origin https://github.com/gpapillera/sample-repo.git
    ```
    > You have yours.
 
 5. **Set** the **target branch**.
-   ```Git
-    git branch -M main
+   ```git
+   git branch -M main
    ```
 
 6. **Push all repository** to the cloud.
-   ```Git
-    git push -u origin main
+   ```git
+   git push -u origin main
    ```
    - **Push all branches**.
-     ```Git
-      git push --all
+     ```git
+     git push --all
      ```
 <br>
 
@@ -235,37 +235,37 @@ To see different ways on **ignoring a file** go with [gitignore](https://github.
 
 1. **1st option** on pulling GitHub Repository.
    - **Fetch** repository
-      ```
-       git fetch
+      ```git
+      git fetch
       ```
       > GitHub repository will be fetch then place to your local computer.
    - **Merge** GitHub repo to local repo.
-      ```Git
-       git merge
+      ```git
+      git merge
       ```
       > GitHub repo will be merge (over write) to local repo.
 2. **2nd option** on pulling GitHub Repository.
-    ```Git
-     git pull
-    ```
-    > This `git pull` command will directly `fetch` and `merge` GitHub repo to local repo.
+   ```git
+   git pull
+   ```
+   > This `git pull` command will directly `fetch` and `merge` GitHub repo to local repo.
 
 <br>
 
 ## 💻 Deleting Branches
 
 1. **Delete all branches except master/main**. (Local repo)
-   ```Git
-    git branch | grep -v "master/main" | xargs git branch -D
+   ```git
+   git branch | grep -v "master/main" | xargs git branch -D
    ```
     OR
-   ```Git
-    git branch | grep -v " master$" | xargs git branch -D
+   ```git
+   git branch | grep -v " master$" | xargs git branch -D
    ```
 
 2. **Delete branch remotely**.
-   ```Git
-    git branch -r --merged master/main | ack -v master/main | sed -e 's/\// :/' | xargs -n2 git push
+   ```git
+   git branch -r --merged master/main | ack -v master/main | sed -e 's/\// :/' | xargs -n2 git push
    ```
    > choose between `master` or `main`.
 
